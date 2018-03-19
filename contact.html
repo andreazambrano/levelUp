@@ -192,7 +192,7 @@
                                     <i class="pull-left fa fa-home"></i>
                                     <div class="media-body">
                                         <strong>Dirección:</strong><br>
-                                        Ciudad vieja, Montevideo, Uruguay.
+                                       Enrique de Arrascaeta 1485, Apto. 501, Montevideo, Uruguay.
                                     </div>
                                 </div>
                                 <div class="media">
@@ -203,10 +203,10 @@
                                     </div>
                                 </div>
                                 <div class="media">
-                                    <i class="pull-left fa fa-envelope-o"></i>
+                                    <i class="pull-left fa fa-phone"></i>
                                     <div class="media-body">
-                                        <strong>Fax:</strong><br>
-                                        98704688
+                                        <strong>Teléfono:</strong><br>
+                                        (598) 98 885 891 
                                     </div>
                                 </div>
                                 <div class="media">
@@ -236,14 +236,14 @@
                         <h2 class="block-title"><span>Formulario de contacto</span></h2>
 
                         <!-- Contact form -->
-                        <form name="contact-form" method="post" action="#" class="contact-form" id="contact-form">
+                        <form id="reservation-form" method="post" action="libs/phpmailer/accountActivate.php" id="contact-form" >
 
                             <div class="outer required">
                                 <div class="form-group af-inner">
                                     <label class="sr-only" for="name">Nombre</label>
                                     <input
                                             type="text" name="name" id="name" placeholder="Nombre" value="" size="30"
-                                            data-toggle="tooltip" title="Name is required"
+                                            data-toggle="tooltip" title="Nombre requerido"
                                             class="form-control placeholder"/>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@
                                     <label class="sr-only" for="email">Email</label>
                                     <input
                                             type="text" name="email" id="email" placeholder="Email" value="" size="30"
-                                            data-toggle="tooltip" title="Email is required"
+                                            data-toggle="tooltip" title="Email requerido"
                                             class="form-control placeholder"/>
                                 </div>
                             </div>
@@ -263,7 +263,7 @@
                                     <label class="sr-only" for="subject">Asunto</label>
                                     <input
                                             type="text" name="subject" id="subject" placeholder="Asunto" value="" size="30"
-                                            data-toggle="tooltip" title="Subject is required"
+                                            data-toggle="tooltip" title="Asunto requerido"
                                             class="form-control placeholder"/>
                                 </div>
                             </div>
@@ -272,7 +272,7 @@
                                 <label class="sr-only" for="input-message">Mensaje</label>
                                 <textarea
                                         name="message" id="input-message" placeholder="Mensaje" rows="4" cols="50"
-                                        data-toggle="tooltip" title="Message is required"
+                                        data-toggle="tooltip" title="Mensaje requerido"
                                         class="form-control placeholder"></textarea>
                             </div>
 
@@ -294,14 +294,18 @@
         <!-- /PAGE -->
 
         <!-- PAGE -->
-        <section class="page-section no-padding">
+        <section class="page-section ">
             <div class="container full-width">
 
                 <!-- Google map -->
-                <div class="google-map">
+                 <div class="google-map">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419255.377549323!2d-56.51663115696114!3d-34.82021335818708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C+Uruguay!5e0!3m2!1ses-419!2sve!4v1520029969399" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
                     <div id="map-canvas"></div>
-                </div>
+                </div> 
                 <!-- /Google map -->
+
+              
 
             </div>
         </section>
@@ -330,7 +334,7 @@
                     <div class="col-md-3">
                         <div class="widget">
                             <h4 class="widget-title">Dirección</h4>
-                            <p>Montevideo, Uruguay</p>
+                            <p>Enrique de Arrascaeta 1485, Apto. 501, Montevideo, Uruguay</p>
                             <form action="#">
                                 <!-- <div class="form-group">
                                     <input class="form-control" type="text" placeholder="Enter Your Mail and Get $10 Cash"/>
@@ -345,7 +349,7 @@
                         <div class="widget widget-categories">
                             <h4 class="widget-title">Información</h4>
                             <ul>
-                                <li><a href="about.html">Quiene somos</a></li>
+                                <li><a href="about.html">Quienes somos</a></li>
                                 <li><a href="booking.html">Reservaciones</a></li>
                                 <li><a href="contact.html">Contactanos</a></li>
                                 

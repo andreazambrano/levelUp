@@ -245,7 +245,7 @@ body {
 }
 .page-section.dark {
   background-color: #14181c;
-  color: #8e9091;
+  color: #fff;
 }
 .page-section.image {
   background: url(../img/page-section-image.png) center top no-repeat;
@@ -286,7 +286,7 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-  color: #fef102;
+  color: #14181c;
 }
 .dark .h1,
 .dark .h2,
@@ -367,12 +367,12 @@ a:focus {
   text-decoration: none;
 }
 a:not(.btn-theme) {
-  color: #fef102;
+  color: #000;
 }
 a:not(.btn-theme):hover,
 a:not(.btn-theme):active,
 a:not(.btn-theme):focus {
-  color: #000000;
+  color: #FEF102;
 }
 .footer a:not(.btn-theme) {
   color: #14181c;
@@ -380,7 +380,7 @@ a:not(.btn-theme):focus {
 .footer a:not(.btn-theme):hover,
 .footer a:not(.btn-theme):active,
 .footer a:not(.btn-theme):focus {
-  color: #fef102;
+  color: #FEF102;
 }
 p {
   margin-bottom: 20px;
@@ -1739,8 +1739,8 @@ input[type=checkbox] {
 }
 .sf-menu li.sale > a:hover,
 .sf-menu li.sale > a {
-  background-color: #fef102;
-  color: #ffffff;
+  background-color: #0e0d0d;
+  color: #fef102;
 }
 .menu-toggle {
   display: none;
@@ -4476,7 +4476,7 @@ input[type=checkbox] {
   background-color: #fef102;
 }
 .tabs li.active a {
-  color: #ffffff;
+  color: #a5abb7;
   background-color: transparent;
 }
 @media (min-width: 768px) {
@@ -5846,7 +5846,7 @@ input[type=checkbox] {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 15px;
-  color: #fef102;
+  color: #ffd200;
 }
 .car-listing .thumbnail-car-card .caption-text {
   font-size: 13px;

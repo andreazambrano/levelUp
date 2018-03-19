@@ -658,9 +658,9 @@ jQuery(document).ready(function () {
                 '</div>' +
                 '<div class="caption text-center">' +
                 '<h4 class="caption-title"><a href="#">VW POLO TRENDLINE 2.0 TDI</a></h4>' +
-                '<div class="caption-text">Start from 39$/per a day</div>' +
+                '<div class="caption-text">Comience con 39$/por dia</div>' +
                 '<div class="buttons">' +
-                '<a class="btn btn-theme" href="#">Rent It</a>' +
+                '<a class="btn btn-theme" href="#">Rentar</a>' +
                 '</div>' +
                 '<table class="table">' +
                 '<tr>' +
@@ -688,7 +688,7 @@ jQuery(document).ready(function () {
                 var mapOptions = {
                     scrollwheel: false,
                     zoom: 12,
-                    center: new google.maps.LatLng(41.079379,28.9984466) // map coordinates
+                    center: new google.maps.LatLng(-34.7594332,-55.660636) // map coordinates
                 };
 
                 map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -836,9 +836,9 @@ jQuery(document).ready(function () {
                 '</div>' +
                 '<div class="caption text-center">' +
                 '<h4 class="caption-title"><a href="#">VW POLO TRENDLINE 2.0 TDI</a></h4>' +
-                '<div class="caption-text">Start from 39$/per a day</div>' +
+                '<div class="caption-text">Desde 39$/por dia</div>' +
                 '<div class="buttons">' +
-                '<a class="btn btn-theme" href="#">Rent It</a>' +
+                '<a class="btn btn-theme" href="#">Rentar</a>' +
                 '</div>' +
                 '<table class="table">' +
                 '<tr>' +
@@ -1006,7 +1006,7 @@ jQuery(document).ready(function () {
                 range: true,
                 min: 0,
                 max: 500,
-                values: [75, 300],
+                values: [45, 300],
                 slide: function (event, ui) {
                     $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
                 }

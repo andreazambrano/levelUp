@@ -96,8 +96,8 @@
                                         <li class="row">
                                             <div class="col-md-3">
                                                 <h4 class="block-title"><span>Level up</span></h4>
-                                                <p>Level up, es un agencia de renta de autos presta servicios en Montevideo Uruguay...</p>
-                                                <p>Level up, es un agencia de renta de autos presta servicios en Montevideo Uruguay.</p>
+                                                <p>Level up, rentamos autos en Montevideo Uruguay...</p>
+                                                <p>Level up, rentamos autos en Montevideo Uruguay..</p>
                                             </div>
                                             <div class="col-md-3">
                                                 <h4 class="block-title"><span>Portafolio</span></h4>
@@ -183,9 +183,10 @@
                 <div class="row">
                     <!-- CONTENT -->
                     <div class="col-md-9 content" id="content">
+                      <form id="reservation-form" method="post" action="libs/phpmailer/accountActivate.php">
 
-                       <!--  <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Información de auto</h3> -->
-                        <!-- <div class="car-big-card alt">
+                        <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Información de auto</h3>
+                        <div class="car-big-card alt">
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="owl-carousel img-carousel">
@@ -218,28 +219,26 @@
                                         <div class="list">
                                             <ul>
                                                 <li class="title">
-                                                    <h2>Volkswagen Golf <span>Diesel</span></h2>
-                                                    2.0 CC Comfortline 95 HP
+                                                    <h2>Chevrolet <span>Nafta</span></h2>
+                                                   
                                                 </li>
-                                                <li>Fuel Diesel / 1600 cm3 Engine</li>
-                                                <li>Under 25,000 Km</li>
-                                                <li>Transmission Manual</li>
-                                                <li>5 Year service included</li>
-                                                <li>Manufacturing Year 2014</li>
-                                                <li>5 Doors and Panorama View</li>
+                                                
+                                                <li>25,000 Km</li>
+                                                <li>Transmicion Manual</li>  
+                                                
                                             </ul>
                                         </div>
                                         <div class="price">
-                                            <strong>220.0</strong> <span>$/for 8 day(s)</span> <i class="fa fa-info-circle"></i>
+                                            <strong>20</strong> <span>$/por dia</span> <i class="fa fa-info-circle"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <hr class="page-divider half transparent"/>
 
-                        <!-- <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Extras</h3> -->
-                        <!-- <form role="form" class="form-extras">
+                        <!-- <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Extras</h3>
+                        <form role="form" class="form-extras">
 
                             <div class="row">
 
@@ -297,6 +296,7 @@
 
                         </form> -->
 
+                      
                         <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Información del cliente</h3>
                         <form action="#" class="form-delivery">
                             <div class="row">
@@ -312,18 +312,19 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input name="fd-name" id="fd-name" title="Name is required" data-toggle="tooltip"
+                                        <input name="fd-name" id="fd-name" title="Nombre requerido" data-toggle="tooltip"
                                                 class="form-control alt" type="text" placeholder="Nombre y apellido:*">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input name="fd-name" id="fd-email" title="Email is required" data-toggle="tooltip"
+                                        <input name="fd-name" id="fd-email" title="Email requerido" data-toggle="tooltip"
                                                 class="form-control alt" type="text" placeholder="Email:*">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group"><input class="form-control alt" type="text" placeholder="Número de teléfono movil1:"></div>
+                                    <div class="form-group">
+                                    <input class="form-control alt" id="fd-phone" type="text" placeholder="Número de teléfono movil1: *"></div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group"><input class="form-control alt" type="text" placeholder="Número de teléfono movil2:"></div>
@@ -378,7 +379,7 @@
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3"></div>
                             </div>
-                          <!--   <div class="panel panel-default">
+                            <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="heading4">
                                     <h4 class="panel-title">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
@@ -388,7 +389,7 @@
                                     </h4>
                                 </div>
                                 <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4"></div>
-                            </div> -->
+                            </div>
                         </div>
 
                         <h3 class="block-title alt"><i class="fa fa-angle-down"></i>Información adicional</h3>
@@ -396,8 +397,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="fad-message" id="fad-message" title="Addition information is required" data-toggle="tooltip"
-                                                class="form-control alt" placeholder="Additional Information" cols="30" rows="10"></textarea>
+                                        <textarea name="fad-message" id="fad-message" title="Información requerida" data-toggle="tooltip"
+                                                class="form-control alt" placeholder="Información adicional" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -411,17 +412,17 @@
                             <a class="btn btn-theme pull-right btn-reservation-now" href="#">Reservar ahora</a>
                             <a class="btn btn-theme pull-right btn-cancel btn-theme-dark" href="#">Cancelar</a>
                         </div>
-
+                    </form>
                     </div>
                     <!-- /CONTENT -->
 
                     <!-- SIDEBAR -->
                     <aside class="col-md-3 sidebar" id="sidebar">
                         
-                       <!--  <div class="widget shadow widget-details-reservation">
+                        <div class="widget shadow widget-details-reservation">
                             <h4 class="widget-title">Detalles de reservaciones</h4>
                             <div class="widget-content">
-                                <h5 class="widget-title-sub">Localizacion cargada</h5>
+                                <h5 class="widget-title-sub">Localización cargada</h5>
                                 <div class="media">
                                     <span class="media-object pull-left"><i class="fa fa-calendar"></i></span>
                                     <div class="media-body"><p>15 enero 2018 / 08:00 am</p></div>
@@ -440,43 +441,17 @@
                                     <div class="media-body"><p>From SkyLine AirPort</p></div>
                                 </div>
                                 <div class="button">
-                                    <a href="#" class="btn btn-block btn-theme btn-theme-dark">Reservacion cargada</a>
-                                </div>
-                            </div>
-                        </div> -->
-                        
-                        <!-- widget testimonials -->
-
-                          <div class="widget shadow">
-                            <div class="widget-title">Testimonios</div>
-                            <div class="testimonials-carousel">
-                                <div class="owl-carousel" id="testimonials">
-                                    <div class="testimonial">
-                                        <div class="media">
-                                            <div class="media-body">
-                                                <div class="testimonial-text">Level level level.</div>
-                                                <div class="testimonial-name">Damian <span class="testimonial-position">Cofundador en Level up</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial">
-                                        <div class="media">
-                                            <div class="media-body">
-                                                <div class="testimonial-text">LEVEL UP LEVEL UP LEVEL UP LEVEL UP LEVEL UP LEVEL UP LEVEL UP LEVEL UP.</div>
-                                                <div class="testimonial-name">Fiorela Scala <span class="testimonial-position"> Asociada de Level up</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
+                                    <a href="#" class="btn btn-block btn-theme btn-theme-dark">Reservación cargada</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- /widget testimonials -->
+                        
+                        
                         <!-- widget helping center -->
                         <div class="widget shadow widget-helping-center">
                             <h4 class="widget-title">Centro de ayuda</h4>
                             <div class="widget-content">
-                                <p>Para averias con el auto llamar o escribir un mensaje.</p>
+                                <p>Para averias con el auto llamar o escribir un mensaje</p>
                                 <h5 class="widget-title-sub">+598 98 704 688</h5>
                                 <p><a href="mailto:evelupcar@hotmail.com">levelupcar@hotmail.com</a></p>
                                 <div class="button">
@@ -500,8 +475,8 @@
                 <!-- Get in touch -->
 
                 <h2 class="section-title">
-                    <small>¡Siéntase libre de decir hola!</small>
-                    <span>Póngase en contacto con nosotros</span>
+                    <small>¡Contactanos!</small>
+                    <span>Tenemos soluciones para vos</span>
                 </h2>
 
                 <div class="row">
@@ -516,8 +491,8 @@
                                         <div class="form-group af-inner has-icon">
                                             <label class="sr-only" for="name">Nombre</label>
                                             <input
-                                                    type="text" name="name" id="name" placeholder="nombre" value="" size="30"
-                                                    data-toggle="tooltip" title="Name is required"
+                                                    type="text" name="name" id="name" placeholder="Nombre" value="" size="30"
+                                                    data-toggle="tooltip" title="Nombre requerido"
                                                     class="form-control placeholder"/>
                                             <span class="form-control-icon"><i class="fa fa-user"></i></span>
                                         </div>
@@ -531,7 +506,7 @@
                                             <label class="sr-only" for="email">Email</label>
                                             <input
                                                     type="text" name="email" id="email" placeholder="Email" value="" size="30"
-                                                    data-toggle="tooltip" title="Email is required"
+                                                    data-toggle="tooltip" title="Email requerido"
                                                     class="form-control placeholder"/>
                                             <span class="form-control-icon"><i class="fa fa-envelope"></i></span>
                                         </div>
@@ -544,7 +519,7 @@
                                 <label class="sr-only" for="input-message">Mensaje</label>
                                 <textarea
                                         name="message" id="input-message" placeholder="Mensaje" rows="4" cols="50"
-                                        data-toggle="tooltip" title="Message is required"
+                                        data-toggle="tooltip" title="Mensaje requerido"
                                         class="form-control placeholder"></textarea>
                                 <span class="form-control-icon"><i class="fa fa-bars"></i></span>
                             </div>
@@ -558,22 +533,23 @@
                         </form>
                         <!-- /Contact form -->
                     </div>
+
                     <div class="col-md-6">
+                    <form id="reservation-form" method="post" action="libs/phpmailer/accountActivate.php">
 
                         <p>Level up, se encuentrsa donde quiera que necesites de nuestros servicios, andate y contactanos cuando queres.</p>
 
                         <ul class="media-list contact-list">
                             <li class="media">
                                 <div class="media-left"><i class="fa fa-home"></i></div>
-                                <div class="media-body">Dirección: Montevideo, Uruguay</div>
+                                <div class="media-body">Dirección: Enrique Arrascaeta 1485, Montevideo, Uruguay</div>
                             </li>
-                            <li class="media">
-                                <div class="media-left"><i class="fa fa"></i></div>
-                                <div class="media-body">.......</div>
-                            </li>
+                           
                             <li class="media">
                                 <div class="media-left"><i class="fa fa-phone"></i></div>
-                                <div class="media-body">Teléfono de soporte: 98 704 688</div>
+                                <div class="media-body">Teléfono de contacto 1: 098 704 688 </div>  <br> 
+                                  <div class="media-left"><i class="fa fa-phone"></i></div>  
+                                <div class="media-body"> Teléfono de contacto 2: 098 885 891 </div>
                             </li>
                             <li class="media">
                                 <div class="media-left"><i class="fa fa-envelope"></i></div>
@@ -581,14 +557,14 @@
                             </li>
                             <li class="media">
                                 <div class="media-left"><i class="fa fa-clock-o"></i></div>
-                                <div class="media-body">Horario de laburo: 09:30-21:00 </div>
+                                <div class="media-body">Horario de trabajo: 08:30 a 20:00 horas</div>
                             </li>
                             <li class="media">
                                 <div class="media-left"><i class="fa fa-map-marker"></i></div>
                                 <div class="media-body">Ver en el mapa</div>
                             </li>
                         </ul>
-
+                    </form >
                     </div>
                 </div>
 
@@ -638,7 +614,7 @@
 <script src="assets/plugins/jquery.sticky.min.js"></script>
 <script src="assets/plugins/jquery.easing.min.js"></script>
 <script src="assets/plugins/jquery.smoothscroll.min.js"></script>
-<!--<script src="assets/plugins/smooth-scrollbar.min.js"></script>-->
+<script src="assets/plugins/smooth-scrollbar.min.js"></script>
 <script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
 <script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
 <script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
