@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '1');
 /**
  * PHPMailer SPL autoloader.
  * PHP Version 5
