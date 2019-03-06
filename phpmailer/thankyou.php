@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="HandheldFriendly" content="true" />
-    <title>Thank You</title>
+    <title>Gracias por contactarme</title>
     <link href='' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="https://submit.jotform.me/js/prototype.js"></script>
     <script type="text/javascript" src="jquery.min.js"></script> 
@@ -14,7 +14,7 @@
             var url='../index.html'; 
             function countdown(){
                 setTimeout(countdown, 1000);
-                $('#box').html("Redirecting in &nbsp;<h3>" + number + "</h3>&nbsp;seconds.");
+                $('#box').html("Andrea Zambrano. &nbsp;<h3>" + number + "</h3>&nbsp;seg .");
                 number--;
                    if(number<0){
                 window.location=url;
@@ -95,7 +95,7 @@
     <link href="css/print-new.css" rel="stylesheet" type="text/css" media="print">
   </head>
   <body class="thankyou">
-    <div id="stage" class="form-all"><p style="text-align:center;"><img src="https://cdn.jotfor.ms/img/check-icon.png" alt="" width="128" height="128" /></p><div style="text-align:center;"><h1 style="text-align: center;">Thank You!</h1><p style="text-align: center;">Your submission has been received.<div id="box"></div>
+    <div id="stage" class="form-all"><p style="text-align:center;"><img src="https://cdn.jotfor.ms/img/check-icon.png" alt="" width="128" height="128" /></p><div style="text-align:center;"><h1 style="text-align: center;">Gracias!</h1><p style="text-align: center;">He recibido su mensaje, le responderé a  la brevedad posible. <div id="box"></div>
         </p></div></div>
   </body>
   <script type="text/javascript">

@@ -15,7 +15,7 @@ $mail->Port = 465;          //587                          // TCP port to connec
 
 
 //echo $email= $_POST['n2']."@".$_POST['n3'];
-$mail->setFrom('support@thetixs.com', 'Restaurante Salsa Mora [Reservacion]');
+$mail->setFrom('support@thetixs.com', 'Restaurante Salsa Mora [Contacto]');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
 $mail->addAddress('andreyzf20@gmail.com');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
@@ -26,7 +26,7 @@ $mail->addAddress('andreyzf20@gmail.com');              // Name is optional
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Reservacion';
+$mail->Subject = 'Mensaje de cliente';
 $mail->Body    = 
    
     '<div align="center" style="background-color:#f6f8f8;">
@@ -49,24 +49,22 @@ $mail->Body    =
 
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['name'].'</b>, 
+            Restaurante Salsa Mora, Te escribe  :   <b>'.$_POST['name'].'</b>.
+            
+
                     
           </div>
           
           <div style="border-radius:10px; width: 320PX; box-shadow:5px 5px 17px 0px rgba(44, 50, 50, 0.14);">
             <table style=" color: #4a4646; margin:0px; padding:20px; max-width:300px;">
               <tr>
-                <td style="color: rgb(246, 248, 248);">Email_:
+                <td style="color: rgb(246, 248, 248);"> Email:
                 </td>
-                <td><h3>Nueva reservacion</h3>
+                <td><h3>Mensaje de cliente</h3>
                 </td>
               </tr>
               <tr>
-               <td>Fecha:</td><td><h3>'.$_POST['datepicker'].
-               '</h3>
-               </td>
-              </tr>
-              <td>Hora:</td><td><h3>'.$_POST['timepicker'].
+               <td>Email:</td><td><h3>'.$_POST['email'].
                '</h3>
                </td>
               </tr>
@@ -76,7 +74,12 @@ $mail->Body    =
                </td>
               </tr>
               <tr>
-               <td>Asientos:</td><td><h3>'.$_POST['date'].
+               <td>Asunto:</td><td><h3>'.$_POST['subjects'].
+               '</h3>
+               </td>
+              </tr>
+              <tr>
+               <td>Mensaje:</td><td><h3>'.$_POST['message'].
                '</h3>
                </td>
               </tr>
