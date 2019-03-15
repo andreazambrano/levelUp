@@ -17,7 +17,7 @@ $mail->Port = 465;          //587                          // TCP port to connec
 //echo $email= $_POST['n2']."@".$_POST['n3'];
 $mail->setFrom('developer@thetixs.com', 'Level Up');
 //$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
-$mail->addAddress('andreazambrano10@gmail.com');              // Name is optional
+$mail->addAddress('rentacarlevelup@gmail.com');              // Name is optional
 //$mail->addReplyTo('$email','roshan');
 //$mail->addCC('passmethecode@gmail.com');
 //$mail->addBCC('bcc@example.com');
@@ -54,7 +54,7 @@ $mail->Body    =
 
           <div style="color:#e44c2a; padding:20px;" align="left">
             <br/>
-           <b>'.$_POST['input-message'].'</b>,                     
+           <b>'.$_POST['message'].'</b>,                     
           </div>
 
           <div style="border-radius:10px; width: 320PX; box-shadow:5px 5px 17px 0px rgba(44, 50, 50, 0.14);">
