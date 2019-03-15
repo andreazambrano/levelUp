@@ -312,7 +312,7 @@ h6 {
 .color h4 small,
 .color h5 small,
 .color h6 small {
-  color: #ffffff;
+  color: #000;
 }
 h1 .fa,
 h2 .fa,
@@ -684,7 +684,7 @@ textarea:focus:-ms-input-placeholder {
   border-radius: 0;
 }
 .btn-theme {
-  color: #ffffff;
+  color: #050505;
   border-width: 1px;
   background-color: #fef102;
   border-color: #fef102;
@@ -745,7 +745,7 @@ textarea:focus:-ms-input-placeholder {
 .btn-theme-dark:hover {
   background-color: #fef102;
   border-color: #fef102;
-  color: #ffffff;
+  color: #020202;
 }
 .btn-theme-light,
 .btn-theme-light:focus,
@@ -2304,7 +2304,7 @@ input[type=checkbox] {
 }
 .main-slider .btn-theme:hover {
   border-color: #fef102;
-  background-color: #fef102;
+  background-color: #fef10299;
   color: #ffffff;
 }
 .main-slider .ver1:before {
